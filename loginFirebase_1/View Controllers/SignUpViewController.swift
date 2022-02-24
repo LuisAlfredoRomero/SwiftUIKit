@@ -25,8 +25,10 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         setUpElements()
+        
+        self.view.backgroundColor = UIColor.rgbLightPurple
 
-        // Do any additional setup after loading the view.
+        
     }
     
     //check the fields

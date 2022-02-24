@@ -18,6 +18,8 @@ class Utilities {
         
         bottomLine.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1).cgColor
         
+        
+        
         //remove border on text field
         textField.borderStyle = .none
         
@@ -28,9 +30,15 @@ class Utilities {
     
     static func styleFilledButton(_ button: UIButton){
         //filled rounded corner style
-        button.backgroundColor = UIColor.init(red: 150/255, green: 50/255, blue: 50/255, alpha: 1)
+        
+        button.backgroundColor = UIColor.rgbDarkRed
+        
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
+        
+        
+        
+        
     }
     
     static func styleHollowButton(_ button:UIButton){

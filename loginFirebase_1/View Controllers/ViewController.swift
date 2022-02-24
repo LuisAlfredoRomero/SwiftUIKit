@@ -12,9 +12,6 @@ import FirebaseAnalytics
 
 class ViewController: UIViewController {
     
-    var videoPlayer:AVPlayer?
-    var videoPlayerLayer:AVPlayerLayer?
-
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     

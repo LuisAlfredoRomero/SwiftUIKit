@@ -38,7 +38,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="3nx-qD-fll"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                         <connections>
                                             <segue destination="ZoY-KY-RM6" kind="show" id="QuO-wT-6GY"/>
@@ -151,8 +152,8 @@
                                             <constraint firstAttribute="height" constant="40" id="9E0-9d-3Zz"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="acY-Gq-sMP"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="signUpTapped:" destination="GYR-p3-Hbl" eventType="touchUpInside" id="WxQ-dZ-f2G"/>
                                         </connections>
@@ -211,8 +212,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CI7-Be-QZz"/>
-                        <color key="backgroundColor" red="0.2846566653112883" green="0.77395037731692262" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" systemColor="tintColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ea7-X9-2JH" firstAttribute="top" secondItem="702-Ig-Vfk" secondAttribute="bottom" constant="84" id="Bev-4u-ej1"/>
                             <constraint firstItem="CI7-Be-QZz" firstAttribute="trailing" secondItem="ea7-X9-2JH" secondAttribute="trailing" constant="50" id="Gch-Xe-yxC"/>
@@ -347,9 +347,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
