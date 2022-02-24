@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1DE5FA27C7DB70000B2F45 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DE5F927C7DB70000B2F45 /* UIColor.swift */; };
 		5E86CC1627BD46F900EB96FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86CC1527BD46F900EB96FB /* AppDelegate.swift */; };
 		5E86CC1827BD46F900EB96FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86CC1727BD46F900EB96FB /* SceneDelegate.swift */; };
 		5E86CC1A27BD46F900EB96FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86CC1927BD46F900EB96FB /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E1DE5F927C7DB70000B2F45 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5E86CC1227BD46F900EB96FB /* loginFirebase_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginFirebase_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E86CC1527BD46F900EB96FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E86CC1727BD46F900EB96FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		5E86CC4027BD49A400EB96FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E86CC4227BD4E0F00EB96FB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E86CC4427BD526900EB96FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5EE41E3F27C0161300844531 /* mome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mome.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +66,6 @@
 		5E86CC0927BD46F900EB96FB = {
 			isa = PBXGroup;
 			children = (
-				5EE41E3D27C0091200844531 /* Media */,
 				5E86CC3627BD484B00EB96FB /* Helpers */,
 				5E86CC3B27BD48A000EB96FB /* View Controllers */,
 				5E86CC1427BD46F900EB96FB /* loginFirebase_1 */,
@@ -98,6 +98,7 @@
 		5E86CC3627BD484B00EB96FB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5E1DE5F927C7DB70000B2F45 /* UIColor.swift */,
 				5E86CC3827BD486900EB96FB /* Constants.swift */,
 				5E86CC3727BD486900EB96FB /* Utilities.swift */,
 			);
@@ -113,14 +114,6 @@
 				5E86CC4027BD49A400EB96FB /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		5EE41E3D27C0091200844531 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-				5EE41E3F27C0161300844531 /* mome.mp4 */,
-			);
-			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +203,7 @@
 				5E86CC3D27BD493500EB96FB /* SignUpViewController.swift in Sources */,
 				5E86CC3A27BD486900EB96FB /* Constants.swift in Sources */,
 				5E86CC4127BD49A400EB96FB /* HomeViewController.swift in Sources */,
+				5E1DE5FA27C7DB70000B2F45 /* UIColor.swift in Sources */,
 				5E86CC1A27BD46F900EB96FB /* ViewController.swift in Sources */,
 				5E86CC1627BD46F900EB96FB /* AppDelegate.swift in Sources */,
 				5E86CC3927BD486900EB96FB /* Utilities.swift in Sources */,
