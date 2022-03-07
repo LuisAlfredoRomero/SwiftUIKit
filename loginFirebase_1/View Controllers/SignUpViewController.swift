@@ -11,7 +11,8 @@ import Firebase
 
 
 class SignUpViewController: UIViewController {
-
+    
+    //MARK: Properties
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,14 +21,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
-    
+   //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpElements()
-        
-        self.view.backgroundColor = UIColor.rgbLightPurple
-
         
     }
     

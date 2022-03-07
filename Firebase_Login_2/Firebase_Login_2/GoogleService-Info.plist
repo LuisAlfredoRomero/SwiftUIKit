@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>942285383373-dgoq5kl0aqc1b17ged6mibi4oc0r0vt1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.942285383373-dgoq5kl0aqc1b17ged6mibi4oc0r0vt1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCVDFdZI6e0PXIWfu0TfNt0y-53i2e3qF0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>942285383373</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>allegro.com.Firebase-Login-2</string>
+	<key>PROJECT_ID</key>
+	<string>fir-market-a622a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-market-a622a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:942285383373:ios:959026720e9bdf322e6b84</string>
+</dict>
+</plist>

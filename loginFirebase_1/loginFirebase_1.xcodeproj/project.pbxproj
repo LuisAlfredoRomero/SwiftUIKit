@@ -26,6 +26,7 @@
 		5E86CC4127BD49A400EB96FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86CC4027BD49A400EB96FB /* HomeViewController.swift */; };
 		5E86CC4327BD4E0F00EB96FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E86CC4227BD4E0F00EB96FB /* Main.storyboard */; };
 		5E86CC4527BD526900EB96FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E86CC4427BD526900EB96FB /* GoogleService-Info.plist */; };
+		5E8C985227CFC56E00BFA65A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C985127CFC56E00BFA65A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5E86CC4027BD49A400EB96FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E86CC4227BD4E0F00EB96FB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E86CC4427BD526900EB96FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E8C985127CFC56E00BFA65A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,9 @@
 		5E86CC0927BD46F900EB96FB = {
 			isa = PBXGroup;
 			children = (
+				5E8C985527CFC63900BFA65A /* Model */,
 				5E86CC3627BD484B00EB96FB /* Helpers */,
+				5E8C985327CFC5A600BFA65A /* Controllers */,
 				5E86CC3B27BD48A000EB96FB /* View Controllers */,
 				5E86CC1427BD46F900EB96FB /* loginFirebase_1 */,
 				5E86CC1327BD46F900EB96FB /* Products */,
@@ -84,9 +88,6 @@
 		5E86CC1427BD46F900EB96FB /* loginFirebase_1 */ = {
 			isa = PBXGroup;
 			children = (
-				5E86CC1527BD46F900EB96FB /* AppDelegate.swift */,
-				5E86CC1727BD46F900EB96FB /* SceneDelegate.swift */,
-				5E86CC4227BD4E0F00EB96FB /* Main.storyboard */,
 				5E86CC4427BD526900EB96FB /* GoogleService-Info.plist */,
 				5E86CC1E27BD46F900EB96FB /* Assets.xcassets */,
 				5E86CC2027BD46FA00EB96FB /* LaunchScreen.storyboard */,
@@ -101,6 +102,7 @@
 				5E1DE5F927C7DB70000B2F45 /* UIColor.swift */,
 				5E86CC3827BD486900EB96FB /* Constants.swift */,
 				5E86CC3727BD486900EB96FB /* Utilities.swift */,
+				5E8C985127CFC56E00BFA65A /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -108,12 +110,29 @@
 		5E86CC3B27BD48A000EB96FB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E86CC1927BD46F900EB96FB /* ViewController.swift */,
 				5E86CC3C27BD493500EB96FB /* SignUpViewController.swift */,
 				5E86CC3E27BD495E00EB96FB /* LoginViewController.swift */,
 				5E86CC4027BD49A400EB96FB /* HomeViewController.swift */,
+				5E86CC4227BD4E0F00EB96FB /* Main.storyboard */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5E8C985327CFC5A600BFA65A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E86CC1927BD46F900EB96FB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E8C985527CFC63900BFA65A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E86CC1527BD46F900EB96FB /* AppDelegate.swift */,
+				5E86CC1727BD46F900EB96FB /* SceneDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +223,7 @@
 				5E86CC3A27BD486900EB96FB /* Constants.swift in Sources */,
 				5E86CC4127BD49A400EB96FB /* HomeViewController.swift in Sources */,
 				5E1DE5FA27C7DB70000B2F45 /* UIColor.swift in Sources */,
+				5E8C985227CFC56E00BFA65A /* Extensions.swift in Sources */,
 				5E86CC1A27BD46F900EB96FB /* ViewController.swift in Sources */,
 				5E86CC1627BD46F900EB96FB /* AppDelegate.swift in Sources */,
 				5E86CC3927BD486900EB96FB /* Utilities.swift in Sources */,
