@@ -20,33 +20,38 @@ class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /*----------------------------------------------*/
+
     func setupLayout(){
         let stackView = createStackView(views: [emailTextField, passwordTextField, loginButton, signupButton])
         
         
         addSubview(backgroundImageView)
         addSubview(logoImageView)
+        addSubview(titleLabel)
+        
         
         addSubview(stackView)
-//        
-//        //logo
-//       logoImageView.setAnchor(top: self.topAnchor, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, paddingTop: 100, paddingLeft: 20, paddingBottom: 600, paddingRight: 20)
-       
+
  
         //backgroud image
         backgroundImageView.setAnchor(top: self.topAnchor, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
         
-        //stackview
-        stackView.setAnchor(width: self.frame.width - 60, height: 210)
-        stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor,constant: 200).isActive = true
-        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        //logo image
+        logoImageView.setAnchor(top: self.safeAreaLayoutGuide.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
+        logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+              
+        //label title
+        titleLabel.setAnchor(top: logoImageView.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, paddingTop: 10, paddingLeft: 20, paddingBottom: 0, paddingRight: 20)
         
+        //stack view
         
+        stackView.setAnchor(top: titleLabel.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, paddingTop: 40, paddingLeft: 40, paddingBottom: 0, paddingRight: 40)
         
     }
     
-    //variables
-    
+    /*----------------------------------------------*/
+
     var loginAction:(() ->Void)?
     
     var signupAction:(() ->Void)?
@@ -56,7 +61,7 @@ class LoginView: UIView {
        let iv = UIImageView()
         iv.image = UIImage(named: "a1.jpeg")
         iv.contentMode = .scaleAspectFill
-        iv.alpha = 1
+        iv.alpha = 0.7
         return iv
     }()
     
@@ -66,6 +71,15 @@ class LoginView: UIView {
         iv.contentMode = .scaleAspectFill
         iv.alpha = 1
         return iv
+    }()
+    
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 34, weight:UIFont.Weight.thin)
+        label.textColor = .black
+        label.text = "MyBestIdeaApp"
+        label.textAlignment = .center
+        return label
     }()
     
     
@@ -80,18 +94,21 @@ class LoginView: UIView {
     }()
     
     let loginButton: UIButton = {
-        let button = UIButton(title: "Login", borderColor: UIColor.greenBorderColor)
+        let button = UIButton(title: "Login")
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        button.backgroundColor = .systemBlue
         return button
     }()
     
     let signupButton: UIButton = {
-        let button = UIButton(title: "SignUp", borderColor: UIColor.redBorderColor)
+        let button = UIButton(title: "SignUp")
         button.addTarget(self, action: #selector(handleSignup), for: .touchUpInside)
+        button.backgroundColor = UIColor(r: 139, g: 0, b: 0)
         return button
     }()
     
-    
+    /*----------------------------------------------*/
+
     @objc func handleLogin(){
         loginAction?()
         

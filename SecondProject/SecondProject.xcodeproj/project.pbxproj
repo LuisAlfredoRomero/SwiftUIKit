@@ -19,7 +19,6 @@
 		5E257A4A27DA6105003B8F9F /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E257A4927DA6105003B8F9F /* UIColor_Extensions.swift */; };
 		5E257A4C27DA6120003B8F9F /* UIButton_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E257A4B27DA6120003B8F9F /* UIButton_Extensions.swift */; };
 		5E257A4E27DA62DE003B8F9F /* UIStackView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E257A4D27DA62DE003B8F9F /* UIStackView_Extensions.swift */; };
-		5E257A5027DAB6D0003B8F9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E257A4F27DAB6D0003B8F9F /* GoogleService-Info.plist */; };
 		5E257A5327DAB744003B8F9F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5E257A5227DAB744003B8F9F /* FirebaseAnalytics */; };
 		5E257A5527DAB744003B8F9F /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E257A5427DAB744003B8F9F /* FirebaseAnalyticsSwift-Beta */; };
 		5E257A5727DAB744003B8F9F /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 5E257A5627DAB744003B8F9F /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -35,6 +34,9 @@
 		5E257A6B27DAB744003B8F9F /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5E257A6A27DAB744003B8F9F /* FirebaseStorageSwift-Beta */; };
 		5E257A6F27DAB9FE003B8F9F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E257A6E27DAB9FE003B8F9F /* SignUpView.swift */; };
 		5E257A7127DABC73003B8F9F /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E257A7027DABC73003B8F9F /* SignUpController.swift */; };
+		5E6941F027DBD7DA00201C65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E6941EF27DBD7DA00201C65 /* GoogleService-Info.plist */; };
+		5E6941F227DBD8A800201C65 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6941F127DBD8A800201C65 /* HomeController.swift */; };
+		5E6941F527DBD90700201C65 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6941F427DBD90700201C65 /* AppUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,9 +54,11 @@
 		5E257A4927DA6105003B8F9F /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
 		5E257A4B27DA6120003B8F9F /* UIButton_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extensions.swift; sourceTree = "<group>"; };
 		5E257A4D27DA62DE003B8F9F /* UIStackView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView_Extensions.swift; sourceTree = "<group>"; };
-		5E257A4F27DAB6D0003B8F9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5E257A6E27DAB9FE003B8F9F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5E257A7027DABC73003B8F9F /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		5E6941EF27DBD7DA00201C65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E6941F127DBD8A800201C65 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		5E6941F427DBD90700201C65 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		5E257A2B27DA582B003B8F9F /* SecondProject */ = {
 			isa = PBXGroup;
 			children = (
+				5E6941F327DBD8F100201C65 /* Model */,
 				5E257A4027DA5852003B8F9F /* Utilities */,
 				5E257A4427DA591A003B8F9F /* Controller */,
 				5E257A4327DA590E003B8F9F /* View */,
@@ -109,7 +114,7 @@
 				5E257A3527DA582C003B8F9F /* Assets.xcassets */,
 				5E257A3727DA582C003B8F9F /* LaunchScreen.storyboard */,
 				5E257A3A27DA582C003B8F9F /* Info.plist */,
-				5E257A4F27DAB6D0003B8F9F /* GoogleService-Info.plist */,
+				5E6941EF27DBD7DA00201C65 /* GoogleService-Info.plist */,
 			);
 			path = SecondProject;
 			sourceTree = "<group>";
@@ -140,8 +145,17 @@
 			children = (
 				5E257A3027DA582B003B8F9F /* LoginController.swift */,
 				5E257A7027DABC73003B8F9F /* SignUpController.swift */,
+				5E6941F127DBD8A800201C65 /* HomeController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E6941F327DBD8F100201C65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E6941F427DBD90700201C65 /* AppUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E257A3927DA582C003B8F9F /* LaunchScreen.storyboard in Resources */,
-				5E257A5027DAB6D0003B8F9F /* GoogleService-Info.plist in Resources */,
+				5E6941F027DBD7DA00201C65 /* GoogleService-Info.plist in Resources */,
 				5E257A3627DA582C003B8F9F /* Assets.xcassets in Resources */,
 				5E257A3427DA582B003B8F9F /* Main.storyboard in Resources */,
 			);
@@ -235,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E257A3127DA582B003B8F9F /* LoginController.swift in Sources */,
+				5E6941F527DBD90700201C65 /* AppUser.swift in Sources */,
 				5E257A2D27DA582B003B8F9F /* AppDelegate.swift in Sources */,
 				5E257A2F27DA582B003B8F9F /* SceneDelegate.swift in Sources */,
 				5E257A4E27DA62DE003B8F9F /* UIStackView_Extensions.swift in Sources */,
@@ -242,6 +257,7 @@
 				5E257A4A27DA6105003B8F9F /* UIColor_Extensions.swift in Sources */,
 				5E257A6F27DAB9FE003B8F9F /* SignUpView.swift in Sources */,
 				5E257A4C27DA6120003B8F9F /* UIButton_Extensions.swift in Sources */,
+				5E6941F227DBD8A800201C65 /* HomeController.swift in Sources */,
 				5E257A4227DA5877003B8F9F /* Constraints_Extensions.swift in Sources */,
 				5E257A7127DABC73003B8F9F /* SignUpController.swift in Sources */,
 				5E257A4827DA6063003B8F9F /* UITextField_Extensions.swift in Sources */,
@@ -406,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = luisromero.com.SecondProject;
+				PRODUCT_BUNDLE_IDENTIFIER = allegro.com.SecondProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -434,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = luisromero.com.SecondProject;
+				PRODUCT_BUNDLE_IDENTIFIER = allegro.com.SecondProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

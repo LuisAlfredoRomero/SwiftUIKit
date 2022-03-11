@@ -22,7 +22,7 @@ extension UITextField {
          placeholder = NSMutableAttributedString(attributedString: NSAttributedString(string: placeHolder, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18), .foregroundColor: UIColor(white: 1, alpha: 0.7)]))
          self.attributedPlaceholder = placeholder
         
-         
+        self.setAnchor(width:0, height: 40)
          self.setLeftPaddingPoints(20)
          
     }

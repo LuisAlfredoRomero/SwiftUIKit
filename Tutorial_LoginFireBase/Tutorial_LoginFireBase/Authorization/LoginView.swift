@@ -24,12 +24,22 @@ class LoginView: UIView {
         
         addSubview(backgroundImageView)
         addSubview(stackView)
+        addSubview(logoImageView)
+        
+        
+        
+        logoImageView.setAnchor(top: self.safeAreaLayoutGuide.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 50, paddingBottom: 0, paddingRight: 50, width: 200, height: 200)
+        logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        
+       
+        
+        
         
         
         backgroundImageView.setAnchor(top: self.topAnchor, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
         
-        stackView.setAnchor(width: self.frame.width - 60, height: 210)
-        stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        stackView.setAnchor(top: logoImageView.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, paddingTop: 10, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: 200, height: 200)
+        
         stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
         
@@ -44,6 +54,25 @@ class LoginView: UIView {
         return iv
     
     }()
+    
+    let logoImageView: UIImageView = {
+       let iv = UIImageView()
+        iv.image = UIImage(named: "apple")
+        iv.contentMode = .scaleAspectFill
+        iv.alpha = 1
+        return iv
+    }()
+    
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 34, weight:UIFont.Weight.thin)
+        label.textColor = .black
+        label.text = "MyBestIdeaApp"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    
     
     let emailTextField: UITextField = {
        let tf = UITextField(placeHolder: "Email")

@@ -20,26 +20,46 @@ class SignUpView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    /*----------------------------------------------*/
+
     func setupLayout(){
+        let stackView = createStackView(views: [nametextField, emailtextField, passwordtextField, confirmtextField, submitButton, cancelButton])
         
         
         self.addSubview(backgroundImageView)
+        self.addSubview(logoImageView)
+        self.addSubview(stackView)
         
+        backgroundImageView.setAnchor(top: self.topAnchor, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0)
+        
+        
+        logoImageView.setAnchor(top: self.topAnchor, left: nil, bottom: stackView.topAnchor, right: nil, paddingTop: 50, paddingLeft: 100, paddingBottom: 0, paddingRight: 20, width: 300, height: 300)
+        logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        
+        stackView.setAnchor(top: logoImageView.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, paddingTop: 0, paddingLeft: 20, paddingBottom: 0, paddingRight: 20)
+        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
         
         
         
     }
     
-    //variables
+    /*----------------------------------------------*/
     
     var submitAction: (() -> Void)?
     var cancelAction: (() -> Void)?
     
     let backgroundImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "w2.jpeg")
+        iv.image = UIImage(named: "w2")
+        iv.contentMode = .scaleAspectFill
+        iv.alpha = 1
+        return iv
+    }()
+    
+    let logoImageView: UIImageView = {
+       let iv = UIImageView()
+        iv.image = UIImage(named: "users")
         iv.contentMode = .scaleAspectFill
         iv.alpha = 1
         return iv
@@ -66,20 +86,22 @@ class SignUpView: UIView {
     }()
     
     let submitButton: UIButton = {
-        let button = UIButton(title: "Submit", borderColor: .greenBorderColor)
-        
+        let button = UIButton(title: "Submit")
+        button.backgroundColor = .systemBlue
         button.addTarget(self, action: #selector(handleSubmit), for: .touchUpInside)
         return button
     }()
     
     let cancelButton: UIButton = {
-        let button = UIButton(title: "Cancel", borderColor: .redBorderColor)
+        let button = UIButton(title: "Cancel")
+        button.backgroundColor = .systemRed
         button.addTarget(self, action: #selector(handleCancel), for: .touchUpInside)
 
         return button
     }()
     
-    
+    /*----------------------------------------------*/
+
     @objc func handleSubmit(){
         submitAction?()
     }

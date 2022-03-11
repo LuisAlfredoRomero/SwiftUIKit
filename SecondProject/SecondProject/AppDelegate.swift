@@ -6,14 +6,37 @@
 //
 
 import UIKit
-
+import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
+    let defaults = UserDefaults.standard
+    var userIsLoggedIn: Bool?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let loginController = UINavigationController(rootViewController: LoginController())
+        let mainController = UINavigationController(rootViewController: HomeController())
+        
+        userIsLoggedIn = defaults.bool(forKey: "UserIsLoggedIn")
+        
+        if userIsLoggedIn == true {
+            window?.rootViewController = mainController
+            
+        }else{
+            window?.rootViewController = loginController
+        }
+        
+        
+        
+
+        FirebaseApp.configure()
         return true
     }
 
