@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout_5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.portrait.and.arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-kg-Fdd">
+                                <rect key="frame" x="87" y="265" width="240" height="206.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="1Ko-dt-Rdy"/>
+                                    <constraint firstAttribute="width" constant="240" id="MvS-iL-ewi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Romero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jr-Bt-160">
+                                <rect key="frame" x="0.0" y="20" width="414" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KVc-I8-jIy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl3-Vf-1qC">
+                                <rect key="frame" x="0.0" y="479" width="414" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yCA-pV-brM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+(51)986885844" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIP-xH-Q8Q">
+                                <rect key="frame" x="31" y="703" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="zxd-uh-Pfe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alfredo.romero.r@outlook.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHq-1k-5XG">
+                                <rect key="frame" x="173" y="703" width="232" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="X4A-CV-dnI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Globant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fs-Ec-Ah1">
+                                <rect key="frame" x="0.0" y="522" width="414" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LID-by-n3t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Fs-Ec-Ah1" firstAttribute="top" secondItem="Dl3-Vf-1qC" secondAttribute="bottom" constant="22" id="84P-mu-eAq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZIP-xH-Q8Q" secondAttribute="bottom" constant="12" id="On8-9W-cu1"/>
+                            <constraint firstItem="SB6-kg-Fdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PAm-bL-QXH"/>
+                            <constraint firstItem="ZIP-xH-Q8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="S1r-qh-t3X"/>
+                            <constraint firstItem="Dl3-Vf-1qC" firstAttribute="top" secondItem="SB6-kg-Fdd" secondAttribute="bottom" constant="7.3333333333333712" id="T14-YD-Rrf"/>
+                            <constraint firstItem="BHq-1k-5XG" firstAttribute="leading" secondItem="ZIP-xH-Q8Q" secondAttribute="trailing" constant="8" symbolic="YES" id="UBa-sn-Nc9"/>
+                            <constraint firstItem="SB6-kg-Fdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Woa-p4-AuR"/>
+                            <constraint firstItem="8Jr-Bt-160" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ZeT-Aw-bIz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BHq-1k-5XG" secondAttribute="trailing" constant="9" id="aur-8e-V2R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BHq-1k-5XG" secondAttribute="bottom" constant="12" id="bE1-lJ-w5l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Jr-Bt-160" secondAttribute="trailing" id="e6E-Wb-y9N"/>
+                            <constraint firstItem="8Jr-Bt-160" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h5W-kH-qxV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dl3-Vf-1qC" secondAttribute="trailing" id="i0e-IS-c0R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Fs-Ec-Ah1" secondAttribute="trailing" id="iIX-at-dPx"/>
+                            <constraint firstItem="BHq-1k-5XG" firstAttribute="leading" secondItem="ZIP-xH-Q8Q" secondAttribute="trailing" constant="8" symbolic="YES" id="iIk-hd-vtM"/>
+                            <constraint firstItem="Dl3-Vf-1qC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jai-7b-w6p"/>
+                            <constraint firstItem="6Fs-Ec-Ah1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pcu-zE-alQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foto" destination="SB6-kg-Fdd" id="Ikn-oe-ORh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.293478260869577"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

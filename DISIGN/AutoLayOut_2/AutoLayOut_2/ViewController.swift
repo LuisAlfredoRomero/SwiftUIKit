@@ -23,11 +23,38 @@ class ViewController: UIViewController {
         greenView.backgroundColor = .green
         
         
+        let backgroundImageView: UIImageView = {
+           let iv = UIImageView()
+            iv.image = UIImage(named: "background9")
+            iv.contentMode = .scaleAspectFill
+            iv.alpha = 1
+            return iv
+        }()
         
-//        view.addSubview(redView)
-//        view.addSubview(blueView)
         
-        [redView, blueView, greenView].forEach{ view.addSubview($0)}
+        let logoImageView: UIImageView = {
+           let iv = UIImageView()
+            iv.image = UIImage(named: "moka")
+            iv.contentMode = .scaleAspectFill
+            iv.alpha = 1
+            return iv
+        }()
+        
+        view.addSubview(backgroundImageView)
+        view.addSubview(logoImageView)
+        view.addSubview(redView)
+        view.addSubview(blueView)
+        view.addSubview(greenView)
+        
+        //[redView, blueView, greenView].forEach{ view.addSubview($0)}
+        
+        backgroundImageView.anchor(top: view.topAnchor,
+                                   leading: view.leadingAnchor,
+                                   bottom: view.bottomAnchor,
+                                   trailing: view.trailingAnchor,
+                                   padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+        
+        
         
         
         redView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
@@ -38,6 +65,9 @@ class ViewController: UIViewController {
                        size: .init(width: 100, height: 0))
         redView.heightAnchor.constraint(equalTo: redView.widthAnchor).isActive = true
         
+        
+        
+    
         blueView.anchor(top: redView.bottomAnchor,
                         leading: nil,
                         bottom: nil,
@@ -52,6 +82,17 @@ class ViewController: UIViewController {
                         bottom: blueView.bottomAnchor,
                         trailing: redView.leadingAnchor,
                         padding: .init(top: 0, left: 12, bottom: 0, right: 12))
+        
+        
+        logoImageView.anchor(top: greenView.bottomAnchor,
+                             leading: nil,
+                             bottom: nil,
+                             trailing: nil,
+                             padding: .init(top: 20, left: 50, bottom: 0, right: 50)
+        )
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        
         
 //        let purpleView = UIView()
 //        purpleView.backgroundColor = UIColor.purple

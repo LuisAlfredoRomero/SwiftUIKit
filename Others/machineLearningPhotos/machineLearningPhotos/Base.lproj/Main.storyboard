@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-DU-uxZ">
+                                <rect key="frame" x="16" y="541" width="382" height="148"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYI-tY-QM8">
+                                <rect key="frame" x="3" y="685" width="94" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="9P5-hA-EhI"/>
+                                    <constraint firstAttribute="width" constant="94" id="g7B-kF-E7B"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tomar foto"/>
+                                <connections>
+                                    <action selector="tomarFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zij-ix-wbc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkm-BN-O6I">
+                                <rect key="frame" x="289" y="685" width="125" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="3aS-b5-BYp"/>
+                                    <constraint firstAttribute="height" constant="31" id="duD-3M-LOT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Selecionar Foto"/>
+                                <connections>
+                                    <action selector="seleccionarFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMb-eJ-gH2"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4Q-zB-M6u">
+                                <rect key="frame" x="3" y="125" width="411" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="416" id="MBN-7a-Up1"/>
+                                    <constraint firstAttribute="width" constant="375" id="fbx-Kn-k3k"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i4Q-zB-M6u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CtJ-vD-S6X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kkm-BN-O6I" secondAttribute="bottom" constant="20" id="DIu-B3-3bf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g6f-DU-uxZ" secondAttribute="bottom" constant="47" id="FtP-G1-ota"/>
+                            <constraint firstItem="g6f-DU-uxZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="541" id="TqM-Lc-RQr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HYI-tY-QM8" secondAttribute="bottom" constant="20" id="YAm-LC-ioV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g6f-DU-uxZ" secondAttribute="trailing" constant="16" id="bWh-1H-T1x"/>
+                            <constraint firstItem="HYI-tY-QM8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="3" id="iIt-ny-3UW"/>
+                            <constraint firstItem="g6f-DU-uxZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="io1-1t-XNs"/>
+                            <constraint firstItem="Kkm-BN-O6I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ot9-bY-aLK"/>
+                            <constraint firstItem="i4Q-zB-M6u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDR-sh-IHs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataImage" destination="i4Q-zB-M6u" id="8ra-tb-9Er"/>
+                        <outlet property="dataLabel" destination="g6f-DU-uxZ" id="khZ-ib-OzT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="115.7608695652174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
